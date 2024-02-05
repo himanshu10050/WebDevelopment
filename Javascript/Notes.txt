@@ -1,0 +1,5 @@
+// For alert:
+alert("message");
+
+// For print :
+console.log("message");

@@ -1,11 +1,18 @@
-div {
+/* div {
   height: 100px;
   width: 100px;
-  /* background-color: aqua; */
-  border: 2px solid black;
-  display: inline-block;
-}
-/* 
-.box1 {
-  background-image: url("CSS\Images\download.jpg");
 } */
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: gray;
+  /* display: flex; */
+}
+.left-aligned {
+  text-align: left;
+  background-color: rgb(209, 55, 55);
+}
+.right-aligned {
+  text-align: right;
+  background-color: rgb(54, 12, 94);
+}

@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: o;
-  color: white;
+  color: black;
 }
 
 #box {
@@ -59,6 +59,10 @@
 
 button {
   background-color: #f08804;
+  color: black;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
 }
 
 #logo {
@@ -68,6 +72,10 @@ button {
 
 a {
   margin-right: 300px;
+  color: aliceblue;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }
 
 #footer {
@@ -77,4 +85,5 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: aliceblue;
 }
