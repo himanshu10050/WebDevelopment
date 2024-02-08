@@ -34,10 +34,15 @@
 // for (let key in student) {
 //   console.log("key = ", key, "value =", student[key]);
 // }
-let gamenum = 35;
-let usernum = prompt("guess the game number : ");
-while (usernum != gamenum) {
-  usernum = prompt("you entered wrong number. guess again : ");
-}
+// let gamenum = 35;
+// let usernum = prompt("guess the game number : ");
+// while (usernum != gamenum) {
+//   usernum = prompt("you entered wrong number. guess again : ");
+// }
 
-console.log("congurlation, you entered the right number ");
+// console.log("congurlation, you entered the right number ");
+
+let result = prompt("User Your Full name");
+
+let username = "@" + result + result.length;
+console.log(username);
