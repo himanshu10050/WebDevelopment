@@ -162,6 +162,113 @@ let arr = nums.reduce((prev, curr) => {
 console.log(arr);
 
 
+To get imputs total sum------------------------------------------------- 
+let n = prompt("enter a number");
+let arr = [];
+for (let i = 0; i <= n; i++) {
+  arr[i - 1] = i;
+}
+console.log(arr);
+
+let sum = arr.reduce((res, curr) => {
+  return res + curr;
+});
+console.log(sum);
+
+DOM Manipluation---------------------------------
+tagName, innerText, innerHTML, textContent------------------
+Using DOM-- to access by tag, -----------------------------
+to change the text use innerText, innerhtml, 
+let h2 = document.querySelector("h2");
+console.dir(h2.innerText);  //to print inner text of h2 
+
+h2.innerText = h2.innerText + "from apna college student";  //to change the h2 text 
+console.dir(h2.innerText);
+
+
+Using DOM-- to access by class -----------------------------
+let divs = document.querySelectorAll(".box");
+// console.log(divs[0]);  //To access divs  differently
+// console.log(divs[1]);
+// console.log(divs[2]);
+divs[0].innerHTML = "new uniqe value of 1";
+divs[1].innerHTML = "new uniqe value of 2";
+divs[2].innerHTML = "new uniqe value of 3";
+
+//Change text using for of loops------------------------------------------
+let divs = document.querySelectorAll(".box");
+
+let idx = 1;
+for (div of divs) {
+  div.innerText = `new uniqe value of ${idx}`;
+
+  idx++;
+}
+// DOM Manipulation----------------------------------------
+// getAttribute(atr) // to get a attribute vslue like id = box--------------------------------
+let div = document.querySelector("div");
+console.log(div);
+
+let i_class = div.getAttribute("class");
+console.log(i_class);
+
+// setAttribute(atr,value) // to set the  attribute vslue -------------------------------
+let h_class = document.querySelector("h2");
+console.log(h_class.setAttribute("class", "newclass"));
+
+
+//Insert element-----------------------------------------------
+node.append(el); //adds at the end of node(inside)
+node.prepend(el); //adds at the start of node(inside)
+node.before(el); // add before the node(outside)
+node.after(el); // add after the node(outside)
+
+example------------------------
+let newbtn = document.createElement("button");
+newbtn.innerText = "click me";
+let div = document.querySelector("h2");
+div.append(newbtn);
+div.prepend(newbtn);
+div.before(newbtn);
+div.after(newbtn);
+
+//Delete  element-----------------------------------------------
+node.remove(); // to delete a element
+// example-----------------------------------------------
+let div = document.querySelector("h2");
+div.remove();
+
+
+// Q1---------------------------------------------------
+let newbtn = document.createElement("button");
+newbtn.innerText = "click me";
+newbtn.style.color = "white";
+newbtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(newbtn);
+
+// Events-----------------------------------------------------------
+let btn1 = document.querySelector("#btn1"); 
+btn1.onclick = () => { //onclick event-----------------------
+  console.log("btn1 was clicked");
+};
+
+let btn2 = document.querySelector("#btn2");
+btn2.ondblclick = () => {  //on  double click event-----------------------
+  console.log("btn2 was clicked 2 times");
+};
+
+let btn3 = document.querySelector("#btn3");
+btn3.onmouseover = () => {  //on mouseover event-----------------------
+  console.log("mouse hover the btn3 time");
+};
+
+// Event listner------------------------------------------------
+let btn1 = document.querySelector("#btn1");
+
+btn1.addEventListener("click", () => { // addeventlistner------------
+  console.log("button was clicked");
+});
 
 
 Arrays-----------------------------------------------
