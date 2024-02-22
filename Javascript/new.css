@@ -1,7 +1,8 @@
-.content {
-  color: red;
+.dark {
+  background-color: black;
+  color: white;
 }
-
-.newclass {
-  background-color: aquamarine;
+.light {
+  background-color: white;
+  color: black;
 }
