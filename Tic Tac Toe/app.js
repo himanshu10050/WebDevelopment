@@ -29,9 +29,11 @@ boxes.forEach((box) => {
     if (turn0) {
       box.innerText = "O";
       turn0 = false;
+      box.classList.add("O-color");
     } else {
       box.innerText = "X";
       turn0 = true;
+      box.classList.add("X-color");
     }
     box.disabled = true;
 
@@ -65,6 +67,7 @@ const checkWinner = () => {
     }
   }
 };
+
 const showWinner = (winner) => {
   msg.innerText = `Congrulation, winner is ${winner} `;
   msgcontainer.classList.remove("hide");

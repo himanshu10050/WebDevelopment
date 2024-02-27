@@ -60,3 +60,10 @@ body {
 .hide {
   display: none;
 }
+
+.X-color {
+  color: Blue;
+}
+.O-color {
+  color: #191913;
+}
